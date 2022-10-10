@@ -10,7 +10,7 @@ const ProductPreview = ({
   price,
 }: ProductPreviewType) => {
   return (
-    <Link href={`/products/${handle}`}>
+    <Link href={`/art/${handle}`}>
       <a>
         <div>
           <Thumbnail thumbnail={thumbnail} size="full" />
