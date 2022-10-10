@@ -12,7 +12,7 @@ const RefinementList = ({
   setRefinementList,
 }: RefinementListProps) => {
   const { collections, isLoading } = useCollections()
-
+  console.log('collections', collections)
   const handleCollectionChange = (
     e: ChangeEvent<HTMLInputElement>,
     id: string

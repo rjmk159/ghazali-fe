@@ -34,7 +34,6 @@ const ProductPage: NextPageWithLayout<PrefetchedPageProps> = ({ notFound }) => {
       keepPreviousData: true,
     }
   )
-
   if (notFound) {
     if (IS_BROWSER) {
       replace("/404")

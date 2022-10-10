@@ -7,14 +7,13 @@ import { NextPageWithLayout } from "types/global"
 
 const Home: NextPageWithLayout = () => {
   return (
-    <>
+    <div className="bg-effect">
       <Head
         title="Home"
         description="Art is everyrging"
       />
-      {/* <Hero /> */}
       <FeaturedProducts />
-    </>
+    </div>
   )
 }
 

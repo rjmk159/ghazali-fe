@@ -8,15 +8,16 @@ const ProductPreview = ({
   handle,
   thumbnail,
   price,
+  home,
 }: ProductPreviewType) => {
   return (
     <Link href={`/art/${handle}`}>
       <a>
         <div>
-          <Thumbnail thumbnail={thumbnail} size="full" />
-          <div className="text-base-regular mt-2">
+          <Thumbnail thumbnail={thumbnail} size="full" home={home} />
+          <div className={`text-base-regular mt-2 ${home && 'caption'}`}>
             <span>{title}</span>
-            <div className="flex items-center gap-x-2 mt-1">
+            {!home && <div className="flex items-center gap-x-2 mt-1">
               {price ? (
                 <>
                   {price.price_type === "sale" && (
@@ -35,7 +36,7 @@ const ProductPreview = ({
               ) : (
                 <div className="w-20 h-6 animate-pulse bg-gray-100"></div>
               )}
-            </div>
+            </div>}
           </div>
         </div>
       </a>

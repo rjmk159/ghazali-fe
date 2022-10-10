@@ -35,7 +35,7 @@ const DropdownMenu = () => {
                   className={clsx(
                     "relative h-full flex items-center transition-all ease-out duration-200"
                   )}
-                  onClick={() => push("/store")}
+                  onClick={() => push("/arts")}
                 >
                   Store
                 </Popover.Button>
