@@ -20,13 +20,14 @@ export default function Footer() {
   const router = useRouter()
   const variants = ["static", "floating", "sticky"]
 
-  const LinkItem = ({ children, href }) => {
-    console.log(router.pathname, href)
+  const LinkItem = (props: { children: Node; href: string }) => {
     return (
       <li
-        className={router.pathname === href ? "menu-item active" : "menu-item"}
+        className={
+          router.pathname === props.href ? "menu-item active" : "menu-item"
+        }
       >
-        <Link href={href}>{children}</Link>
+        <Link href={props.href}>{props.children}</Link>
       </li>
     )
   }
@@ -49,7 +50,8 @@ export default function Footer() {
             <Grid xs={4} className="brand-logo">
               <Navbar.Brand>
                 <p>
-                  Made with <span style={{color:'red'}}>❤️</span> by <a href="https://descriptive.ai">Descriptive.ai</a>
+                  Made with <span style={{ color: "red" }}>❤️</span> by{" "}
+                  <a href="https://descriptive.ai">Descriptive.ai</a>
                 </p>
               </Navbar.Brand>
             </Grid>
