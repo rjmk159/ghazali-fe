@@ -51,7 +51,7 @@ const FeaturedProducts = () => {
       }
     ]
   }
-  function NextArrow(props) {
+  function NextArrow(props: { className: any; style: any; onClick: any; }) {
     const { className, style, onClick } = props
     return (
       <div
@@ -64,7 +64,7 @@ const FeaturedProducts = () => {
     )
   }
   
-  function PrevArrow(props) {
+  function PrevArrow(props: { className: any; style: any; onClick: any; }) {
     const { className, style, onClick } = props
     return (
       <div
