@@ -12,7 +12,7 @@ const FeaturedProducts = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    lazyLoad: true,
+    // lazyLoad: false,
     slidesToShow: 4,
     autoplay: true,
     slidesToScroll: 1,
@@ -83,7 +83,7 @@ const FeaturedProducts = () => {
         {data
           ? data.map((product) => (
               <li key={product.id} className="product-item">
-                <ProductPreview {...product} home />
+                <ProductPreview {...product} />
               </li>
             ))
           : Array.from(Array(4).keys()).map((i) => (
