@@ -1,3 +1,4 @@
+/*  eslint-disable */
 import Head from "@modules/common/components/head"
 import FeaturedProducts from "@modules/home/components/featured-products"
 import Hero from "@modules/home/components/hero"
@@ -42,7 +43,7 @@ const Home: NextPageWithLayout = () => {
         <div className="row-fluid bg-effect">
           <div className="column-50">
             <p className="mw-700 ">
-              Completely awestruck with nature and its various hues, Ghazali’s
+              Completely awestruck with nature and its various hues, Ghazali's
               work echoes his emotions. Each work of his is an endeavour to
               showcase the various forms of nature and its mesmerising beauty.
               His artistic work is class apart and the strokes in his canvasses
@@ -55,7 +56,7 @@ const Home: NextPageWithLayout = () => {
               group shows of his work globally. He has been participating in
               various national and international art camps. He was the only
               Indian participating in the much talked about art event in Egypt,
-              ‘Sharm EI Sheikh’.
+              'Sharm EI Sheikh'.
             </p>
           </div>
         </div>
@@ -82,7 +83,7 @@ const Home: NextPageWithLayout = () => {
         <div className="row-fluid">
           <div className="column-50 bg-effect">
             <p>
-              His work falls under the category of ‘Impression Art’ and what is
+              His work falls under the category of 'Impression Art' and what is
               even more striking is that his paintings are solely based on
               imagination. In one of his works, a series of 45 Mountain
               paintings, Ghazali has captured the serenity, grandeur and natural
@@ -124,16 +125,16 @@ const Home: NextPageWithLayout = () => {
         <Spacer p={77} />
         {/* *************************************** */}
         <div className="row-fluid">
-          <div class="about-quote bg-effect">
+          <div className="about-quote bg-effect">
             <p className="p-big">
               <FaQuoteLeft size={40} color="#ececec" />
               Delving deep in his work, which not only expresses his doting
-              admiration for nature; his style reflects a thirst of mankind’s
+              admiration for nature; his style reflects a thirst of mankind's
               inner needs. His work is simple yet striking and brings to life
               the natural marvels. The work is not time bound; yet captures
               natural changes – seasonal or habitation. Distractions do not find
               place in his work; thus giving all the space to his theme –
-              ‘nature’.
+              'nature'.
             </p>
             <Spacer p={67} />
             <span className="p-small">
@@ -250,7 +251,7 @@ const Home: NextPageWithLayout = () => {
                 <li>
                   <span className="about-row-date">2012</span>
                   <span className="about-row-content">
-                    Part of the ‘All India group show by Fusion Art Foundation’
+                    Part of the 'All India group show by Fusion Art Foundation'
                     , Chitra Kala Parishad Bangalore
                   </span>
                 </li>
@@ -279,7 +280,7 @@ const Home: NextPageWithLayout = () => {
                 <li>
                   <span className="about-row-date">2008</span>
                   <span className="about-row-content">
-                    Participated in a group show ‘India on Canvas, Jr.’,
+                    Participated in a group show 'India on Canvas, Jr.',
                     organized by the Ambassador of France and Khushi – an NGO at
                     the Embassy of France, New Delhi
                   </span>
@@ -362,13 +363,13 @@ const Home: NextPageWithLayout = () => {
                 <li>
                   <span className="about-row-date">2013</span>
                   <span className="about-row-content">
-                    Painting published in ‘Women on Top’
+                    Painting published in 'Women on Top'
                   </span>
                 </li>
                 <li>
                   <span className="about-row-date">2012</span>
                   <span className="about-row-content">
-                    Painting published in ‘Viswa Patrakar Sadan’, a quarterly
+                    Painting published in 'Viswa Patrakar Sadan', a quarterly
                     magazine
                   </span>
                 </li>
@@ -422,7 +423,7 @@ const Home: NextPageWithLayout = () => {
                   <span className="about-row-content">
                     He is the proud recipient of the Maulana Mohammad Ali Jauhar
                     Young Achiever Award by Alumni Association of Jamia Millia
-                    Islamia. He received this on the institute’s Alumni Day,
+                    Islamia. He received this on the institute's Alumni Day,
                     December 23, 2018
                   </span>
                 </li>
@@ -447,7 +448,7 @@ const Home: NextPageWithLayout = () => {
                   <span className="about-row-content">
                     He is the proud recipient of the Maulana Mohammad Ali Jauhar
                     Young Achiever Award by Alumni Association of Jamia Millia
-                    Islamia. He received this on the institute’s Alumni Day,
+                    Islamia. He received this on the institute's Alumni Day,
                     December 23, 2018
                   </span>
                 </li>
@@ -548,12 +549,11 @@ const Home: NextPageWithLayout = () => {
             <p>
               Artist Ghazali Moinuddin was awarded the Certificate of
               Appreciation for participating the Painting competition in
-              ‘Yamunautsav’, held on 27th March, 2022. This was an initiation
+              'Yamunautsav', held on 27th March, 2022. This was an initiation
               focusing towards spreading awareness to make river Yamuna regain
               its past glory.
             </p>
           </div>
-      
         </div>
         <Spacer p={112} />
       </Container>
