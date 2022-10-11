@@ -53,7 +53,7 @@ export type ProductPreviewType = {
   title: string
   handle: string | null
   thumbnail: string | null,
-  home: boolean | null,
+  // home: boolean,
   price?: {
     calculated_price: string
     original_price: string
