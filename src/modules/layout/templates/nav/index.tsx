@@ -25,15 +25,14 @@ export default function Header() {
 
   const { toggle } = useMobileMenu()
 
-  const LinkItem = ({ children, href }) => {
-    console.log(router.pathname, href)
+  const LinkItem = (props: { children: any; href: string }) => {
     return (
       <li
         className={
-          router.pathname.includes(href) ? "menu-item active" : "menu-item"
+          router.pathname.includes(props.href) ? "menu-item active" : "menu-item"
         }
       >
-        <Link href={href}>{children}</Link>
+        <Link href={props.href}>{props.children}</Link>
       </li>
     )
   }
