@@ -8,7 +8,7 @@ import { ReactElement } from "react"
 import { FaQuoteLeft } from "react-icons/fa"
 import { NextPageWithLayout } from "types/global"
 
-const Spacer = ({ p }) => <div style={{ paddingBottom: p }}></div>
+const Spacer = (props: { p:any; }) => <div style={{ paddingBottom: props.p }}></div>
 const Home: NextPageWithLayout = () => {
   return (
     <>
