@@ -8,9 +8,15 @@ import { Container } from "@nextui-org/react"
 import React, { useRef } from "react"
 import { FaQuoteLeft } from "react-icons/fa"
 
-
 type ExhibitionTemplateProps = {
-  exhibition: {}
+  exhibition: {
+    imageUrl: any
+    isNew: boolean
+    title: string
+    year: string
+    description: string
+    description_2: string
+  }
 }
 
 const ExhibitionTemplate: React.FC<ExhibitionTemplateProps> = ({
@@ -39,7 +45,7 @@ const ExhibitionTemplate: React.FC<ExhibitionTemplateProps> = ({
           </span>
         </div>
       </div>
-      <FaQuoteLeft size={40} color="#ececec"/>
+      <FaQuoteLeft size={40} color="#ececec" />
       <div className="single-exhibition-description">
         {exhibition.description}
       </div>
