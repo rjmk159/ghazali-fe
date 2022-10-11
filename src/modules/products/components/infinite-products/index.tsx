@@ -13,12 +13,12 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { useInfiniteQuery } from "react-query"
 
 type InfiniteProductsType = {
-  params: StoreGetProductsParams
+  params: StoreGetProductsParams,
+  hideMasnory: boolean
 }
 
 const InfiniteProducts = ({
   params,
-  matchWithCollectionId,
   hideMasnory,
 }: InfiniteProductsType) => {
   const { cart } = useCart()
@@ -50,12 +50,11 @@ const InfiniteProducts = ({
     )
 
   const previews = usePreviews({ pages: data?.pages, region: cart?.region })
-  console.log("previews", previews)
+
   useEffect(() => {
     if (inView && hasNextPage) {
       fetchNextPage()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView, hasNextPage])
 
   return (
