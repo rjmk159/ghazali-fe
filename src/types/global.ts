@@ -38,7 +38,6 @@ export type SiteProps = {
 export type PrefetchedPageProps = {
   notFound: boolean,
   exhibition?: any | null,
-  matchWithCollectionId?: any | null
 }
 
 // For pages with nested layouts

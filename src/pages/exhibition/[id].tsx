@@ -22,7 +22,7 @@ const ExhibitionPage: NextPageWithLayout<PrefetchedPageProps> = ({
 }) => {
   const { query, isFallback, replace } = useRouter()
   const [params, setParams] = useState<StoreGetProductsParams>({})
-  console.log('params', params)
+  console.log("params", params)
   if (notFound) {
     if (IS_BROWSER) {
       replace("/404")
@@ -40,11 +40,7 @@ const ExhibitionPage: NextPageWithLayout<PrefetchedPageProps> = ({
           image={exhibition.thumbnail}
         />
         <ExhibitionTemplate exhibition={exhibition} />
-        <InfiniteProducts
-          params={params}
-          hideMasnory
-          matchWithCollectionId={exhibition.collection_id}
-        />
+        <InfiniteProducts params={params} hideMasnory />
       </>
     )
   }

@@ -13,14 +13,11 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { useInfiniteQuery } from "react-query"
 
 type InfiniteProductsType = {
-  params: StoreGetProductsParams,
+  params: StoreGetProductsParams
   hideMasnory?: boolean | null
 }
 
-const InfiniteProducts = ({
-  params,
-  hideMasnory,
-}: InfiniteProductsType) => {
+const InfiniteProducts = ({ params, hideMasnory }: InfiniteProductsType) => {
   const { cart } = useCart()
 
   const { ref, inView } = useInView()
