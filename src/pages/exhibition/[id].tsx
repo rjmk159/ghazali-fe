@@ -52,7 +52,7 @@ ExhibitionPage.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(context: { query: { id: any } }) {
   const { id } = context.query
 
   let res = await getProductDetails(id)
