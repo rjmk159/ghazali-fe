@@ -7,16 +7,15 @@ import Layout from "@modules/layout/templates"
 import { NextPageWithLayout } from "types/global"
 import { Container, Grid, Row } from "@nextui-org/react"
 
-const Exhibition: NextPageWithLayout = ({ allExhibitions }) => {
-  console.log("allExhibitions", allExhibitions)
+const Exhibition = (props: { allExhibitions: any }) => {
   return (
     <>
       <Head title="Exhibition" description="Explore all of our Exhibitions." />
       <h1 className="main-title bg-effect">Exhibition</h1>
       <Container>
-        {allExhibitions.map(({ id, index, year, imageUrl, title, isNew }) => (
+        {props.allExhibitions.map(({ id, index, year, imageUrl, title, isNew }) => (
           <Row className="exhibition-item" key={id}>
-            <Grid className="exhibition-image-grid"  xs={6}>
+            <Grid className="exhibition-image-grid" xs={6}>
               <div
                 className="exhibition-image"
                 style={{ backgroundImage: `url('/assets/${imageUrl}.png')` }}
