@@ -2,13 +2,9 @@ import { useFeaturedProductsQuery } from "@lib/hooks/use-layout-data"
 // import UnderlineLink from "@modules/common/components/underline-link"
 import ProductPreview from "@modules/products/components/product-preview"
 import SkeletonProductPreview from "@modules/skeletons/components/skeleton-product-preview"
-import { Container } from "@nextui-org/react";
+import { Container } from "@nextui-org/react"
 import { FaArrowLeft, FaArrowRight, FaLinkedinIn } from "react-icons/fa"
-import Slider from "react-slick";
-
-
-
-
+import Slider from "react-slick"
 
 const FeaturedProducts = () => {
   const { data } = useFeaturedProductsQuery()
@@ -25,33 +21,37 @@ const FeaturedProducts = () => {
     pauseOnHover: true,
     // variableWidth: true,
     arrows: true,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: (
+      <NextArrow className={undefined} style={undefined} onClick={undefined} />
+    ),
+    prevArrow: (
+      <PrevArrow className={undefined} style={undefined} onClick={undefined} />
+    ),
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   }
-  function NextArrow(props: { className: any; style: any; onClick: any; }) {
+  function NextArrow(props: { className: any; style: any; onClick: any }) {
     const { className, style, onClick } = props
     return (
       <div
@@ -63,8 +63,8 @@ const FeaturedProducts = () => {
       </div>
     )
   }
-  
-  function PrevArrow(props: { className: any; style: any; onClick: any; }) {
+
+  function PrevArrow(props: { className: any; style: any; onClick: any }) {
     const { className, style, onClick } = props
     return (
       <div
