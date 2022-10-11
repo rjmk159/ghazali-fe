@@ -14,7 +14,7 @@ import { useInfiniteQuery } from "react-query"
 
 type InfiniteProductsType = {
   params: StoreGetProductsParams,
-  hideMasnory: boolean
+  hideMasnory?: boolean | null
 }
 
 const InfiniteProducts = ({
