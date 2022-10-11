@@ -20,7 +20,7 @@ export default function Footer() {
   const router = useRouter()
   const variants = ["static", "floating", "sticky"]
 
-  const LinkItem = (props: { children: Node; href: string }) => {
+  const LinkItem = (props: { children: any; href: string }) => {
     return (
       <li
         className={
