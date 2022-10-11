@@ -1,4 +1,4 @@
-export const getProductDetails = async (id) => {
+export const getProductDetails = async (id: string) => {
   const response = EXHIBITIONS.find((el) => el.id === id)
 
   return { ...response, imageUrl: Math.floor(Math.random() * 7 + 1) }
