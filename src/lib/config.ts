@@ -2,7 +2,7 @@ import Medusa from "@medusajs/medusa-js"
 import { QueryClient } from "react-query"
 
 // Defaults to standard port for Medusa server
-let MEDUSA_BACKEND_URL = "https://ghazali-server.herokuapp.com/"
+let MEDUSA_BACKEND_URL = "http://13.126.38.12:9000/"
 
 
 

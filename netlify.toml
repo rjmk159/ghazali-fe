@@ -1,2 +1,2 @@
 [template.environment]
-NEXT_PUBLIC_MEDUSA_BACKEND_URL="https://ghazali-server.herokuapp.com/"
+NEXT_PUBLIC_MEDUSA_BACKEND_URL="http://13.126.38.12:9000/"
